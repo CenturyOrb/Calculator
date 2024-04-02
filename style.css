@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+:root {
+  /* Colors */
+  --grey: #eff2f3;
+  --text: #959595;
+  --line: #adb5bd;
+
+  /* Typography */
+  --font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
+    Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 46px 1fr 5vh;
+}
+
+/* Head */
+
+header {
+  grid-area: "h";
+  background-color: var(--grey);
+  border-bottom: 1px solid var(--line);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/* Main section */
+
+main {
+  grid-area: "m";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculatorBox {
+  height: 550px;
+  width: 600px;
+  border: 1px solid var(--line);
+}
+
+/* Footer */
+
+footer {
+  grid-area: "f";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--grey); */
+  /* border-top: 1px solid var(--line); */
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div {
+  color: var(--text);
+}
+
+.github {
+  padding-right: 7px;
+  margin-right: 7px;
+  border-right: 1px solid var(--line);
+}
+
+.contact {
+  padding-right: 7px;
+  margin-right: 7px;
+  border-right: 1px solid var(--line);
+}
