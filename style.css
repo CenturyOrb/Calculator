@@ -9,17 +9,15 @@
   /* Colors */
   --grey: #eff2f3;
   --text: #959595;
-  --line: #adb5bd;
+  --line: rgba(0, 0, 0, 0.05);
 
   /* Typography */
-  --font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
-    Helvetica, Arial, Lucida Grande, sans-serif;
 }
 
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 46px 1fr 5vh;
+  grid-template-rows: 50px 1fr 38px;
 }
 
 /* Head */
@@ -28,7 +26,6 @@ header {
   grid-area: "h";
   background-color: var(--grey);
   border-bottom: 1px solid var(--line);
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -55,7 +52,7 @@ main {
 .calculatorBox {
   height: 550px;
   width: 600px;
-  border: 1px solid var(--line);
+  border: 1px solid #bebdc0;
 }
 
 /* Footer */
@@ -65,8 +62,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--grey); */
-  /* border-top: 1px solid var(--line); */
 }
 
 section {
@@ -75,8 +70,13 @@ section {
   align-items: center;
 }
 
-section div {
-  color: var(--text);
+section a {
+  color: #00000080;
+  font-size: 0.9rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 .github {
